@@ -26,9 +26,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip setuptools wheel
         python -m pip install .[dev]
-    - name: Lint with flake8
+    - name: Lint with pylint
       run: |
-        flake8
+        pylint
     - name: Test with pytest
       run: |
         pytest
